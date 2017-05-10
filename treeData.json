@@ -1,25 +1,26 @@
 [
   {
-  "name": "Top Level",
+  "name": "Licence",
+  "url":"http://visam.interlivre.fr/formation/876",
   "parent": "null",
   "children": [
     {
-      "name": "Level 2: A",
+      "name": "Master",
+      "url":"http://visam.interlivre.fr/formation/33",
+      "selected" : true,
       "parent": "Top Level",
       "children": [
         {
-          "name": "Son of A",
-          "parent": "Level 2: A"
+          "name": "Doctorat 1",
+          "url":"http://visam.interlivre.fr/formation/1310",
+          "parent": "Master"
         },
         {
-          "name": "Daughter of A",
-          "parent": "Level 2: A"
+          "name": "Doctorat 2",
+          "url":"http://visam.interlivre.fr/formation/1311",
+          "parent": "Master"
         }
       ]
-    },
-    {
-      "name": "Level 2: B",
-      "parent": "Top Level"
     }
   ]
 }
