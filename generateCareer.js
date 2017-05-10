@@ -25,15 +25,24 @@ var svg = d3.select("#diag").append("svg")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // load the external data
-d3.json("treeData.json", function (error, treeData) {
-	root = treeData[0];
-	update(root);
+d3.json("treeData.json", function (error, data) {
+	updateCareer(data[0]);
+	updateTree(data[1]);
 });
 
-function update(source) {
+function updateCareer(source) {
+	$(document).ready(function(){
+		$("h1.header").text(source.careerName);
+		$("h5.header").text(source.careerDescription);
+   // jQuery methods go here...
+
+});
+}
+
+function updateTree(source) {
 
 	// Compute the new tree layout.
-	var nodes = tree.nodes(root).reverse(),
+	var nodes = tree.nodes(source).reverse(),
 		links = tree.links(nodes);
 
 	// Normalize for fixed-depth.
