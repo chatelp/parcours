@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,400italic,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+@import url("http://fonts.googleapis.com/icon?family=Material+Icons");
+
+    body {
+        /*font-family: Bitter, serif;*/
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+    }
+    h1, h2, h3, h4, h5 {
+        font-family: Bitter, serif;
+    }
+
+	h5 {
+		font-size: 1.3rem;
+		line-height: 139%;
+	}
+
+	h6 {
+		text-transform: uppercase;
+		font-size: 0.9rem;
+	}
+
+    @media only screen and (min-width: 993px) {
+        .container.large {
+            width: 90%;
+        }
+    }
+
+    .activeorderby, .activefacet {
+        color: #e42e18;
+        font-weight: 700;
+    }
+    .bottomline .orderby ul, .bottomline .orderby li {
+        display: inline;
+        padding: 0;
+    }
+    .bottomline .orderby, .bottomline .facettotalcount {
+        display: inline-block;
+    }
+
+    .facettotalcount {
+        font-weight: 700;
+        padding-right: 10px;
+    }
+    .facettitle {
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    .facetitem {
+        cursor: pointer;
+        margin-top: 4px;
+        position: relative;
+    }
+    .facetitemcount {
+        position: absolute;
+        right: 2px;
+        background-color: white;
+        font-size: 14px;
+        text-align: right;
+        color: #ccc;
+        float: right;
+    }
+    .facetlist {
+        padding: 8px 10px 5px 10px;
+        display: block;
+    }
+    .orderbyitem, .deselectstartover {
+        cursor: pointer;
+    }
+
+
+    .bottomline .deselectstartover {
+    float: right;
+    }
+
+    .highlight {
+        background-color: #FFFF88;
+    }
+    .begin-line {
+        height: 10px;
+        background-color :#e42e18;
+    }
+
+    .card.laboratoire {
+        border-top: 4px solid #00bcd4;
+    }
+    .card.formation {
+        border-top: 4px solid #EDA832;
+/*        border-bottom: 4px solid #EDA832;
+*/    }
+    .card.ecole {
+        border-top: 4px solid #ffd740;
+    }
+
+    .checkbox {
+        font-size: 15px;
+    }
+
+    .card .card-content .card-title {
+        line-height: 30px;
+    }
+    p {
+        padding: 4px;
+    }
+
+    #search {
+        color: white;
+    }
+
+    #search-input, #search-input-fake  {
+        font-size: 2.2em;
+/*        padding-top: 15px;
+        height: 4rem;
+        font-style: italic;
+        border-bottom: 1px solid #D32F2F;*/
+        font-family: Bitter, serif;
+    }
+
+    .icon-search {
+        margin-top: 10px;
+    }
+    #search-input:focus {
+        border-bottom: 1px solid #e42e18;
+        box-shadow: 0 1px 0 0 #e42e18;
+
+    }
+    .input-field .prefix.active {
+        color: #e42e18;
+    }
+
+    #search-input-fake {
+        font-size: 2.6em;
+        border-bottom: 3px solid #D32F2F;
+        margin-top: 16px;
+    }
+
+    #search-input-fake::-webkit-input-placeholder {
+    color: white !important;
+    }
+     
+    #search-input-fake:-moz-placeholder { /* Firefox 18- */
+    color: white !important;  
+    }
+     
+    #search-input-fake::-moz-placeholder {  /* Firefox 19+ */
+    color: white !important;  
+    }
+     
+    #search-input-fake:-ms-input-placeholder {  
+    color: white !important;  
+    }
+
+    input::-webkit-input-placeholder {
+    color: #7A7777 !important;
+    }
+     
+    input:-moz-placeholder { /* Firefox 18- */
+    color: #7A7777 !important;  
+    }
+     
+    input::-moz-placeholder {  /* Firefox 19+ */
+    color: #7A7777 !important;  
+    }
+     
+    input:-ms-input-placeholder {  
+    color: #7A7777 !important;  
+    }
+    
+
+
+    
+    /*search-layout*/
+    #search-layout {
+        display: none;
+    }
+    #search-layout.on {
+        display: block;
+        position: fixed;
+        overflow:hidden;
+        top: 0;
+        left: 0;
+        background-color: rgba(255,255,255,1);
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+
+    .logo-hesam {
+        height: 245px !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .logo-hesam-small {
+        height: 114px !important;
+    }
+
+    .rechercher-wrapper input[type=text]{
+        width: 70%;
+    }
+    
+
+    
+    #loader  {
+        margin-top:100px;
+        text-align: center;
+    }
+
+
+
+    .actions li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    #search-layout h4 {
+        font-size: 1.6em;
+    }
+
+    .help-home {
+        padding: 5px 10px;
+        font-style: italic;
+    }
+
+    ul.tabs {
+        background-color: #D32F2F;
+    }
+    ul.tabs li label {
+        color: white;
+    }
+
+    .list-suggest {
+    }
+    .list-suggest li {
+        display: block;
+        margin: 0px 10px 5px 0px;
+        padding:10px;
+    }
+
+    .list-suggest-thematique li {
+        display: inline-block;
+        margin: 0px 5px 5px 0px;
+/*        padding:5px;
+*/    }
+
+    .list-suggest-thematique a {
+        text-transform: none;
+    }
+
+    .btn.more {
+        display: block;
+        background-color: #F7F7F7;
+        color:black;
+        text-transform: none;
+        font-family: Bitter, serif;
+    }
+    .btn.close {
+        position: absolute;
+        top:0px;
+        right:0px;
+        background-color: white;
+        color :black;
+    }
+    .result-suggest {
+        height: 290px;
+        overflow: hidden; 
+    }
+
+
+    input[type=checkbox]:checked  + span { font-weight: 700; }
+
+    .ng-not-empty +span {
+        font-weight: 700;
+    }
+
+    [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+        visibility: hidden;
+    }
+
+    .facetgroup span {
+        cursor: pointer;
+        font-size: 1.3em;
+    }
+    /*Card CSS */
+
+	ul.list-thematique {
+		margin: 0px;
+	}
+
+    ul.list-thematique li {
+        display: inline;
+
+    }
+    
+    .first {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .card-content h3 {
+        margin-top: 10px;
+    }
+
+
+    .etablissement-name {
+        font-size: 1.2em;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .laboratoire .etablissement-name {
+        color: #00bcd4;
+    }
+
+    
+    .formation .etablissement-name {
+        color: #EDA832;
+    }
+
+    .list-thematique a {
+        color: #9e9e9e;
+        padding: 3px;
+    }
+    
+    .formation .card-action a {
+        color: #EDA832 !important;
+        vertical-align: top;
+    }
+
+    .item-labo {
+        background-color: #00bcd4;
+        color: white;
+        font-size: 1.4em;
+        display: inline-block;
+        padding: 0px 4px;
+    }
+
+
+    .item-formation {
+        background-color: #EDA832;
+        color: white;
+        font-size: 1.4em;
+        display: inline-block;
+        padding: 0px 4px;
+    }
+
+    .laboratoire .card-action a {
+        color: #00bcd4 !important;
+        vertical-align: top;
+    }
+
+    .card-action i {
+        margin-right: 5px;
+
+    }
+    .laboratoire .etablissement span:first-child {
+        color: #00bcd4;
+    }
+    
+
+    #suggest {
+        background-color: #F1F1F1;
+        padding-top: 5px;
+        border-bottom: 5px solid #D32F2F;
+    }
+
+
+    .suggest h4 {
+        margin-top: 15px;
+        font-size: 1.8em;
+        color: #D32F2F;
+    }
+
+     .card-content h5:hover {
+        text-decoration:underline;
+     }
+
+     .petit {
+        /*height: */
+     }
+     .petit .etablissement {
+        font-size: 0.9em;
+     }
+    .petit .card-content {
+        padding-top: 8px;
+    }
