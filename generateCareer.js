@@ -24,19 +24,30 @@ var svg = d3.select("#diag").append("svg")
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+svg.append("svg:defs").append("svg:marker")
+    .attr("id", "triangle")
+    .attr("refX", 18)
+    .attr("refY", 6)
+    .attr("markerWidth", 30)
+    .attr("markerHeight", 30)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M 0 0 12 6 0 12 3 6")
+    .style("fill", "black");
+	
 // load the external data
 d3.json("treeData.json", function (error, data) {
-	updateCareer(data[0]);
-	updateTree(data[1]);
+	if (data.length == 2) {
+		updateCareer(data[0]);
+		updateTree(data[1]);
+	}
 });
 
 function updateCareer(source) {
-	$(document).ready(function(){
+	$(document).ready(function () {
 		$("h1.header").text(source.careerName);
 		$("h5.header").text(source.careerDescription);
-   // jQuery methods go here...
-
-});
+	});
 }
 
 function updateTree(source) {
@@ -93,6 +104,8 @@ function updateTree(source) {
 	link.enter().insert("path", "g")
 		.attr("class", "link")
 		.attr("d", diagonal);
+		//.attr("marker-end", "url(#triangle)");
+
 
 }
 
