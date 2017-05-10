@@ -1,0 +1,25 @@
+{
+  "name": "parcours",
+  "authors": [
+    "Pierre CHATEL <chatelp@gmail.com>"
+  ],
+  "description": "visu parcours pour Hesam",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "3.4.13"
+  }
+}
