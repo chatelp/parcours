@@ -37,10 +37,10 @@ svg.append("svg:defs").append("svg:marker")
 	
 // load the external data
 d3.json("treeData.json", function (error, data) {
-	if (data.length == 2) {
-		updateCareer(data[0]);
-		updateTree(data[1]);
-	}
+	if(data.hasOwnProperty("career"))
+		updateCareer(data.career);
+	if(data.hasOwnProperty("tree"))
+		updateTree(data.tree);
 });
 
 function updateCareer(source) {
@@ -80,6 +80,19 @@ function updateTree(source) {
 		.style("stroke", function (d) {
 			return d.selected ? "red" : "steelblue";
 		});
+		//.append("title")
+   		//.text(function(d) { return d.name; });
+    
+	$('svg circle').tipsy({ 
+        gravity: 'w', 
+        html: true, 
+        title: function() {
+		  var d = this.__data__;
+          var text = d.description ? d.description : d.name;
+		  text = text.concat(' - <span style="color: steelblue">Cliquez pour plus de détails.</span>');
+		  return text; 
+        }
+      });
 
 	nodeEnter.append("text")
 		.attr("x", function (d) {
@@ -90,9 +103,10 @@ function updateTree(source) {
 			return d.children || d._children ? "end" : "start";
 		})
 		.text(function (d) {
-			return d.name;
+			return  d.institution ? d.name.concat(", ", d.institution) : d.name;
 		})
 		.style("fill-opacity", 1);
+
 
 	// Declare the links…
 	var link = svg.selectAll("path.link")

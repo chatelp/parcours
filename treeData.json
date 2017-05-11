@@ -1,27 +1,30 @@
-[
-  {
+{
+  "career": {
     "careerName": "Parcours de test",
-    "careerDescription" : "Lorem Ipsum"
+    "careerDescription": "Lorem Ipsum"
   },
-  {
-  "name": "Licence",
-  "url":"http://visam.interlivre.fr/formation/876",
-  "children": [
-    {
+  "tree": {
+    "name": "Licence",
+    "institution" : "CNAM",
+    "description": "Licence Sciences humaines et sociales (SHS) mention sciences sociales",
+    "url": "http://visam.interlivre.fr/formation/971",
+    "children": [{
       "name": "Master",
-      "url":"http://visam.interlivre.fr/formation/33",
-      "selected" : true,
-      "children": [
-        {
-          "name": "Doctorat 1",
-          "url":"http://visam.interlivre.fr/formation/1310"
-        },
-        {
-          "name": "Doctorat 2",
-          "url":"http://visam.interlivre.fr/formation/1311"
-        }
-      ]
-    }
-  ]
+      "institution" : "ENA",
+      "description": "Master européen de gouvernance et d'administration",
+      "url": "http://visam.interlivre.fr/formation/33",
+      "selected": true,
+      "children": [{
+        "name": "Doctorat 1",
+        "institution" : "CNAM",
+        "description": "Doctorat de sociologie - travail social",
+        "url": "http://visam.interlivre.fr/formation/1310"
+      }, {
+        "name": "Doctorat 2",
+        "institution" : "CNAM",
+        "description": "Doctorat de sciences de l'éducation - travail social",
+        "url": "http://visam.interlivre.fr/formation/1311"
+      }]
+    }]
+  }
 }
-]

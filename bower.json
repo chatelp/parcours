@@ -21,6 +21,6 @@
   ],
   "dependencies": {
     "d3": "3.4.13",
-    "materialize": "~0.98.2"
+    "materialize": "~0.98.2",
   }
 }
