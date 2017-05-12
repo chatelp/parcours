@@ -5,23 +5,34 @@
   },
   "tree": {
     "name": "Licence",
-    "institution" : "CNAM",
+    "institution": "CNAM",
     "description": "Licence Sciences humaines et sociales (SHS) mention sciences sociales",
     "url": "http://visam.interlivre.fr/formation/971",
     "children": [{
       "name": "Master",
-      "institution" : "ENA",
+      "institution": "ENA",
       "description": "Master européen de gouvernance et d'administration",
       "url": "http://visam.interlivre.fr/formation/33",
       "selected": true,
       "children": [{
         "name": "Doctorat 1",
-        "institution" : "CNAM",
+        "institution": "CNAM",
         "description": "Doctorat de sociologie - travail social",
-        "url": "http://visam.interlivre.fr/formation/1310"
+        "url": "http://visam.interlivre.fr/formation/1310",
+        "children": [{
+          "name": "Enseignant-chercheur",
+          "rome": "K2108",
+          "description": "Enseignant-chercheur",
+          "url": "http://candidat.pole-emploi.fr/marche-du-travail/fichemetierrome?codeRome=K2108"
+        }, {
+          "name": "Action sociale",
+          "rome": "K1201",
+          "description": "Action sociale",
+          "url": "http://candidat.pole-emploi.fr/marche-du-travail/fichemetierrome?codeRome=K1201"
+        }]
       }, {
         "name": "Doctorat 2",
-        "institution" : "CNAM",
+        "institution": "CNAM",
         "description": "Doctorat de sciences de l'éducation - travail social",
         "url": "http://visam.interlivre.fr/formation/1311"
       }]

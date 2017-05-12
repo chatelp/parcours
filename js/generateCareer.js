@@ -47,6 +47,7 @@ d3.json("treeData.json", function (error, data) {
 
 function updateCareer(source) {
 	$(document).ready(function () {
+		document.title = source.careerName;
 		$("h1.header").text(source.careerName);
 		$("h5.header").text(source.careerDescription);
 	});
@@ -79,8 +80,8 @@ function updateTree(source) {
 
 	nodeEnter.append("circle")
 		.attr("r", 10)
-		.style("stroke", function (d) {
-			return d.selected ? "red" : "steelblue";
+		.style("stroke", function (d) {			
+			return d.selected ? "red" : (d.rome ? "green" : "steelblue");
 		});
 		//.append("title")
    		//.text(function(d) { return d.name; });
