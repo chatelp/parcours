@@ -19,7 +19,7 @@ La capture suivante présente le parcours intégré dans le site final de l'outi
 
 La vidéo ci-dessous est une présentation compléte du cas d'usage de ce projet.
 
-![Screenshot1](https://github.com/chatelp/parcours/blob/master/readme/visam.mp4?raw=true)
+[Cliquez pour la vidéo](https://github.com/chatelp/parcours/blob/master/readme/visam.mp4)
 
 ## Licence - GPLv3
 
