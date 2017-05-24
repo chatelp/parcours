@@ -121,8 +121,6 @@ function updateTree(source, margin, width, height) {
 		.attr("class", "link")
 		.attr("d", diagonal);
 	//.attr("marker-end", "url(#triangle)");
-
-
 }
 
 function click(d) {
